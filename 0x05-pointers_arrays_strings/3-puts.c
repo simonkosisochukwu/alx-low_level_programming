@@ -1,17 +1,17 @@
-#include <stdio.h>
-
-void _puts(char *);
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _puts - a function that prints a string
+ * @str: string input
+ * Return: string
  */
-int main(void)
+void _puts(char *str)
 {
-	char *str;
+	int i;
 
-	str = "Holberton!";
-	_puts(str);
-	return (0);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
