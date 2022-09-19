@@ -1,5 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
 /**
 * void prototypes()
@@ -17,5 +16,3 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 void puts_half(char *str);
 int atoi(char *str);
-
-#endif /*MAIN_H*/
