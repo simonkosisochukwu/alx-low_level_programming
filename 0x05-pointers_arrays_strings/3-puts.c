@@ -1,10 +1,14 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * _puts - a function that prints a string
  * @str: string input
- * Return: string
+ *
+ * Description: print a string
+ * On success: return no erro
  */
+
 void _puts(char *str)
 {
 	int i;
