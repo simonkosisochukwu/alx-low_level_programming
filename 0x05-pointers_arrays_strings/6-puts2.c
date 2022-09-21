@@ -1,17 +1,19 @@
-#include "school.h"
+#include "holberton.h"
+
 /**
- * puts2 - Prints out every other char of the string.
- * @str: input string to print.
+ * puts2 - prints every other character of a  string to stdout
+ * @str: string to print
+ *
+ * Return: void
  */
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
-	while (str[i] != '\0')
+	while (*(str + i))
 	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-		i++;
+		_putchar(*(str + i));
+		i = i + 2;
 	}
 	_putchar('\n');
 }
