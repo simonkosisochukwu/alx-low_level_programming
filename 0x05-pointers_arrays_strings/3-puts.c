@@ -3,19 +3,17 @@
 
 /**
  *_puts - prints a string
-* @str: string to print
-*
-* Descsiption:to prints a string
-* On success: returns no error
-*/
+ * @str: string to print
+ *
+ * Descsiption:to prints a string
+ * On success: returns no error
+ */
 
 void _puts(char *str)
 {
-	int i = 0;
-       
+	int i = 0;       
 	while (*(str + i) != '\0')
 	{
-	  
 		putchar(*(str + i));
 		i++;
 	}
