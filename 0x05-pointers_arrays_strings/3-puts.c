@@ -2,21 +2,19 @@
 #include "main.h"
 
 /**
- * _puts - a function that prints a string
- * @str: string input
- *
- * Description: print a string
- * On success: return no erro
- */
+*_puts - prints a string
+*@str: string to print
+*
+*Descsiption: prints a string
+*On success: returns no error
+*/
 
 void _puts(char *str)
 {
 	int i = 0;
-
-	while (*( str + 1) != '\0');
+	while (*(str + i) != '\0')
 	{
-	  _putchar(*(str + i));
-	  i++;
+		putchar(*(str + i));
+		i++;
 	}
-	_putchar(10);
-}
+	putchar(10);
