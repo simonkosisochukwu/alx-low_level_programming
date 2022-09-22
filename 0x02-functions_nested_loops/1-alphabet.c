@@ -1,17 +1,21 @@
-#include “main.h”
+#include "main.h"
+
 /**
- * print_alphabet – Prints the alphabet in lowercase
+ * print_alphabet - entry point
  *
- * Return: Always 0 (Success)
+ * Description: Prints the alphabet with _putchar
+ *
+ * Return: void
  */
+
+
 void print_alphabet(void)
 {
-char alpha;
-for (alpha = ‘a’; alpha <= ‘z’; alpha++)
-{
-_putchar (alpha);
+	char c;
 
-
-}
-_putchar(‘\n’);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
