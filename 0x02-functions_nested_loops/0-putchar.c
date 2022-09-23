@@ -1,21 +1,15 @@
-#include "main.h"
+#include <stdion.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - main function .
+ * main - Entry point.
  *
- * Return: 0
+ * Return: Always success
  */
 int main(void)
 {
-	char h[] = "_putchar\n";
-	int s = sizeof(h);
-	int i;
 
-	for (i = 0; i < s; i++)
-	{
-		_putchar(h[i]);
+printf("_putchar\n");
 
-	}
-
-	_putchar('\n');
-	return (0);
+return (0);
 }
