@@ -1,10 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
 
 /**
-  * get_op_func - print the name of this function
-  * @s: has the length of the arguments
-  * Return: 0 to indicate a good working of the program
-  */
+ * get_op_func - Selects correct function to perform based on @s
+ *
+ * @s: The operator
+ *
+ * Return: The pointer to the operator's function or
+ * NULL if not found
+ */
 
 int (*get_op_func(char *s))(int, int)
 {
@@ -22,12 +27,12 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (strcmp(s, ops[i].op) == 0)
+		if (*(ops[i].op) == *s)
 			return (ops[i].f);
+
 		i++;
 	}
 
-	return (NULL);
-
+	return (ops[i].f);
 }
 
