@@ -1,22 +1,17 @@
-#include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
-  * malloc_checked - fills memory with a constant byte
-  * @b: is the size of the pointer
-  * Return: a void pointer
+  * malloc_checked - allocates memory using malloc.
+  * @b: size of memory to be allocated.
+  *
+  * Return: pointer to allocated memory.
   */
 void *malloc_checked(unsigned int b)
 {
-	void *s;
+	void *p = malloc(b);
 
-	s = malloc(b);
-	if (s == NULL)
-	{
+	if (p == NULL)
 		exit(98);
-		return (s);
-	}
-	return (s);
+
+	return (p);
 }
 
